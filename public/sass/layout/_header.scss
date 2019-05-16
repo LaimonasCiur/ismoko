@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  height: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: -35rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-bottom: -2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: -13rem;
+  }
+
+  &__logo {
+    margin-top: -5rem;
+    height: 30rem;
+    width: 25rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: -5.5rem;
+      height: 20rem;
+      width: 18rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: -5.5rem;
+      height: 20rem;
+      width: 18rem;
+    }
+  }
+
+  &__num {
+    margin-top: -5rem;
+    font-weight: 700;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: -3.5rem;
+      font-size: 1rem;
+      padding: 0.25;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      // margin-top: -3.5rem;
+      font-size: 1rem;
+      padding: 0.25;
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}

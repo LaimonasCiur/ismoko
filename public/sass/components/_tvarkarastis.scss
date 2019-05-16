@@ -1,0 +1,70 @@
+.tvarkarastis {
+  margin: 0 auto 15rem;
+  width: 85%;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100%;
+  }
+
+  &__div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-gap: 1.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-gap: 0;
+    }
+  }
+
+  &__table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 2px #eaedee; /* this draws the table border  */
+
+    @media only screen and (max-width: $bp-small) {
+      width: 95%;
+      margin-left: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 70%;
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-extraSmall) {
+      width: 68%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+td,
+tr,
+th {
+  border: 2px solid #eaedee;
+  font-weight: 700;
+  color: #11565d;
+  font-size: 1.25rem;
+  padding: 1rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0.1rem;
+    font-weight: 100;
+    font-size: 0.25rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-weight: 100;
+    font-size: 0.25rem;
+    padding: 0.1rem !important;
+  }
+}

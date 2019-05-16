@@ -1,0 +1,85 @@
+.video {
+  margin-bottom: -10rem;
+  position: relative;
+  margin: 15rem auto;
+  display: grid;
+  justify-content: center;
+
+  &__frame {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    width: 75rem;
+    height: 50rem;
+    background-color: #f2f8fb;
+    border: 1.5rem solid #fff;
+    box-shadow: 0px 17px 25px 0px rgba(153, 118, 118, 0.2);
+
+    @media only screen and (max-width: $bp-large) {
+      width: 70rem;
+      height: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 60rem;
+      height: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 50rem;
+      height: 25rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 30rem;
+      height: 15rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    height: 18rem;
+    width: 15rem;
+    position: absolute;
+    z-index: 2;
+    left: 30rem;
+    bottom: 43rem;
+    transform: rotate(-36deg);
+    z-index: 1;
+
+    @media only screen and (max-width: $bp-largest) {
+      display: none;
+    }
+  }
+
+  &__h1 {
+    color: #4b7680;
+    font-size: 2.5rem;
+    margin-top: -12.5rem;
+    font-weight: 600;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2rem;
+    }
+  }
+
+  &__icon {
+    fill: #d5e3e9;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 12rem;
+      width: 8rem;
+    }
+  }
+}

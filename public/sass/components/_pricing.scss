@@ -1,0 +1,330 @@
+.pricing {
+  margin-top: 5rem;
+
+  &__heading {
+    text-align: center;
+
+    &-p {
+      color: #4b7680;
+      margin-top: -1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__nav {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &-btn {
+      margin-top: 1.5rem;
+      margin-right: 1.5rem;
+      background-color: #fff;
+      border: 2px solid #eaedee;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      color: #4b7680;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+        margin: 0.25rem auto;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: #f9b126;
+        transition: 0.3s;
+        box-shadow: 0 2.5rem 4rem rgba(153, 118, 118, 0.3);
+      }
+    }
+  }
+
+  &__personal {
+    margin-top: 5rem;
+
+    &-h3 {
+      text-align: center;
+      color: #4b7680;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    &-table {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border-style: hidden;
+      box-shadow: 0 0 0 2px #eaedee;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 75%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        width: 95%;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      margin: 0 auto;
+      justify-content: flex-end;
+      width: 60%;
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-left: 27.5%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        margin-left: 37%;
+      }
+
+      &-1 {
+        @include papildomosDovanos;
+        flex: 0 0 22%;
+
+        @media only screen and (max-width: $bp-largest) {
+          flex: 0 0 28%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          flex: 0 0 35%;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 2.5rem 4rem rgba(153, 118, 118, 0.3);
+        }
+      }
+
+      &-2 {
+        @include papildomosDovanos;
+        flex: 0 0 22%;
+
+        @media only screen and (max-width: $bp-largest) {
+          flex: 0 0 28%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          flex: 0 0 35%;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 2.5rem 4rem rgba(153, 118, 118, 0.3);
+        }
+      }
+    }
+  }
+
+  &__advance {
+    margin-top: 5rem;
+
+    &-h3 {
+      text-align: center;
+      color: #4b7680;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    &-table {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border-style: hidden;
+      box-shadow: 0 0 0 2px #eaedee;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 75%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        width: 95%;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      margin: 0 auto;
+      justify-content: flex-end;
+      width: 60%;
+
+      @media only screen and (max-width: $bp-largest) {
+        margin-left: 27.5%;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        margin-left: 38%;
+      }
+
+      &-1 {
+        @include papildomosDovanos;
+        flex: 0 0 18.5%;
+
+        @media only screen and (max-width: $bp-largest) {
+          flex: 0 0 22%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          flex: 0 0 27%;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 2.5rem 4rem rgba(153, 118, 118, 0.3);
+        }
+      }
+
+      &-2 {
+        @include papildomosDovanos;
+        flex: 0 0 18.5%;
+
+        @media only screen and (max-width: $bp-largest) {
+          flex: 0 0 25.5%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+          flex: 0 0 31.5%;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 2.5rem 4rem rgba(153, 118, 118, 0.3);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    padding: 0 0.5rem;
+  }
+
+  &__onetime {
+    margin-top: 5rem;
+    &-h3 {
+      text-align: center;
+      color: #4b7680;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    &-header {
+      text-align: center;
+    }
+
+    &-divs {
+      width: 70%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      grid-row-gap: 3rem;
+      grid-column-gap: 1.5rem;
+      align-items: center;
+      justify-items: center;
+
+      @media only screen and (max-width: $bp-smallest) {
+        margin-right: 7.5rem;
+      }
+    }
+
+    &-1,
+    &-2,
+    &-3 {
+      border: 2px solid #eaedee;
+      border-radius: 0.75rem;
+    }
+
+    &-link {
+      width: 50%;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    &-a {
+      display: block;
+      text-decoration: none;
+      padding: 1rem;
+      border-radius: 2rem;
+      background-color: #f9b126;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      &:hover {
+        color: #57c7d2;
+      }
+    }
+
+    &-ul {
+      list-style: none;
+      font-size: 1.5rem;
+      color: #2d6977;
+      padding: 2rem;
+    }
+
+    &-li {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    &-info {
+      padding-top: 2rem;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    &-footer {
+      background: #57c7d2;
+      text-align: center;
+    }
+
+    &-btn {
+      padding: 2rem;
+      font-weight: 700;
+      font-size: 2.2rem;
+      border: none;
+      background: #57c7d2;
+      color: #327d89;
+      cursor: pointer;
+    }
+  }
+}
+
+td,
+tr,
+th {
+  text-align: center;
+  border: 2px solid #eaedee;
+  font-weight: 700;
+  color: #11565d;
+  font-size: 1.25rem;
+  padding: 1rem;
+
+  // @media only screen and (max-width: $bp-smallest) {
+  //     font-weight: 400;
+  //     font-size: .5rem;
+  //     padding: .1rem;
+  // }
+
+  // @media only screen and (max-width: $bp-small) {
+  //     font-weight: 400;
+  //     font-size: .5rem;
+  //     padding: .1rem;
+  // }
+}

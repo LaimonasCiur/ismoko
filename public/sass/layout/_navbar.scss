@@ -1,0 +1,132 @@
+.navbar {
+  margin-top: -10rem;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 15px 17px 25px 15px rgba(153, 118, 118, 0.2);
+
+  &__items {
+    cursor: pointer;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    margin: 0 auto;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+  }
+
+  &__span-1 {
+    position: absolute;
+    right: 85%;
+    top: -60%;
+
+    @media only screen and (max-width: $bp-largest) {
+      display: none;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      top: -5%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      right: 75%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      right: 70%;
+      top: 20%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      right: 75%;
+      top: 20%;
+    }
+  }
+
+  &__span-2 {
+    position: absolute;
+    right: 9%;
+    top: -60%;
+
+    @media only screen and (max-width: $bp-largest) {
+      display: none;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
+  }
+
+  &__item {
+    height: 8rem;
+    text-decoration: none;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    &:focus {
+      border: none;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem;
+    }
+
+    &:hover {
+      color: black !important;
+      background-color: #57c7d2;
+      transition: 0.3s;
+      box-shadow: 0 2.5rem 4rem rgba(153, 118, 118, 0.3);
+    }
+  }
+
+  &__icon {
+    margin-right: 1.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 2rem;
+      height: 2.5rem;
+    }
+  }
+
+  &__logo {
+    height: 16rem;
+    width: 13rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 10rem;
+      width: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 12rem;
+      width: 10rem;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+
+  &__h3 {
+    font-size: 1.5rem;
+    color: #4b7680;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1rem;
+    }
+  }
+}

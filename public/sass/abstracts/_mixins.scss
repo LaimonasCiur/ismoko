@@ -1,0 +1,51 @@
+@mixin papildomosDovanos {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background-color: #f9b126;
+  border: none;
+  padding: 1rem;
+  color: #b45b02;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1rem;
+  }
+}
+
+@mixin after {
+  &::after {
+    margin-top: 1rem;
+    background-color: #59c5d1;
+    height: 4px;
+    width: 5.5rem;
+    content: '';
+    display: block;
+  }
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 1.5rem;
+}
+
+@mixin paragraph {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #78979e;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+}

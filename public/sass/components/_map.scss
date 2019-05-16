@@ -1,0 +1,142 @@
+.map {
+  background-color: #ecf0f3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  @media only screen and (max-width: $bp-medium) {
+    background-color: #ecf0f3;
+    height: 100rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100%;
+    height: 80rem;
+  }
+
+  &__img {
+    flex: 0 0 50%;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 100%;
+      margin-bottom: -15rem;
+    }
+
+    &-img {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 95%;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__info {
+    flex: 1 1 50%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 90%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+      height: 80%;
+      margin-top: 18rem;
+    }
+
+    &-h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #4b7680;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.7rem;
+      }
+    }
+
+    &-h4 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #4b7680;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 1.5rem;
+        font-weight: 0;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.5rem;
+        font-weight: 0;
+      }
+    }
+  }
+
+  &__bus {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 10rem;
+    margin: 0.5rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0.5rem;
+    }
+
+    &-logo {
+      margin-left: 2rem;
+      height: 4rem;
+      width: 4rem;
+      fill: #f9b126;
+
+      @media only screen and (max-width: $bp-largest) {
+        height: 3rem;
+        width: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        height: 3rem;
+        width: 3rem;
+        margin-left: 1rem;
+      }
+    }
+
+    &-info {
+      padding-left: 1rem;
+      padding-right: 2rem;
+      color: #4b7680;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 1.2rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

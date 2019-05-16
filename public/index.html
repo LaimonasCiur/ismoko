@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="Išmoko.lt | Sertifikuota papildomo ugdymo mokykla Lietuvoje" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://ismoko.lt" />
+    <meta property="og:image" content="http://ismoko.lt/css/img/social.png" />
+    <meta
+      property="og:description"
+      content="Išmoko.lt XXI a. Sertifikuota ir pripažinta geriausia mokymosi įstaiga Lietuvoje, ruošianti 1-12 klasės moksleivius. Garantuotas rezultatas"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.comp.css" />
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="keywords"
+      content="matematikos korepetitorius, korepetitorius vilniuje, korepetitorius kaune, papildomos matematikos pamokos"
+    />
+    <meta
+      name="description"
+      content="Ismoko.lt - korepetitorių mokykla, kuri suteikia pinigų grąžinimo garantiją, jei jūsų rezultatai nepakils dviem balais. Registruokitės jau šiandien!"
+    />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+    <title>
+      Kaip mes mokome? | Matematikos, Lietuvių, Anglų ir Fizikos korepetitorius Vilniuje|Kaune - papildomos pamokos
+      moksleiviams 1-12kl.
+    </title>
+  </head>
+  <body>
+    <div class="bg">
+      <header class="header">
+        <img src="img/logo/Group 775.svg" alt="Logo" class="header__logo" />
+        <div class="header__num">
+          <img src="img/iconos/phone-receiver (1).svg" alt="Phone icon" class="header__icon" />
+          <h4>+370 624 32518</h4>
+        </div>
+      </header>
+      <div class="header__logo">
+        <img src="img/peledziukas.svg" alt="Form Icon" class="form__logo" />
+      </div>
+      <div class="form__ellipse">
+        <img src="img/Ellipse 9.png" alt="" />
+      </div>
+      <div class="form__ellipse-left">
+        <img src="img/Ellipse 9.png" alt="" />
+      </div>
+      <div class="form__path93">
+        <img src="img/Path 93.png" class="form__size" alt="" />
+      </div>
+      <div class="form__path95">
+        <img src="img/Path 95.png" class="form__size-1" alt="" />
+      </div>
+
+      <div class="form__left">
+        <div class="form__left-slideout">
+          <div class="form__left-contact">
+            <img src="img/iconos/phone-receiver (1).svg" class="form__icon" />
+            SUSISIEKTI
+          </div>
+          <div class="form__left-slider">
+                  Turite klausimų? Klauskite!<br /><br />
+                      Tel. nr. (Smolensko g. 10C) <a href="tel:+37062432518"><strong>+370 624 32518</strong></a
+                      ><br />
+                      Tel. nr. (Buivydiškių g. 26) <a href="tel:+37061266668"><strong>+370 6126 6668</strong></a>
+                    </span>
+                </div>
+        </div>
+      </div>
+
+      <!-- <div class="form__right">
+          <div class="form__right-slideout">
+              <div class="form__right-contact">
+                  <img src="img/iconos/book (1).svg" class="form__icon"/>
+                  NEMOKAMA KNYGA
+            </div>
+            <div class="form__right-slider">
+                Kaip mokytis namie?<br /><br />
+                  <a href="#"><strong>Siųstis Knygą</strong></a>
+              </div>
+        </div> -->
+
+      <div class="form">
+        <div class="form__h1">
+          <h1>Pasiimk NEMOKAMĄ pamoką dabar!</h1>
+        </div>
+        <form method="POST" id="form" action="/users">
+          <div class="form__group">
+            <label class="form__label">
+              <img src="img/iconos/user-silhouette.svg" alt="" class="form__icon" />
+              <input type="text" name="name" class="form__input" id="firstName" placeholder="Jūsų vardas" required />
+            </label>
+            <label class="form__label">
+              <img src="img/iconos/envelope (1).svg" alt="" class="form__icon" />
+              <input type="email" name="email" class="form__input" placeholder="El.paštas" required />
+            </label>
+            <label class="form__label">
+              <img src="img/iconos/phone-receiver (1).svg" alt="" class="form__icon" />
+              <input
+                type="text"
+                name="phoneNumber"
+                id="form__number"
+                class="form__input"
+                placeholder="Tel. numeris"
+                required
+                minlength="12"
+                maxlength="12"
+              />
+            </label>
+            <p>
+              <label class="form__label" for="t1">
+                <img src="img/iconos/book (1).svg" alt="" class="form__icon" />
+                <input
+                  placeholder="Dalykas"
+                  type="text"
+                  name="class"
+                  class="form__input"
+                  list="dalykas__options"
+                  required
+                />
+                <datalist id="dalykas__options">
+                  <option>Lietuvių k.</option>
+                  <option>Anglų k.</option>
+                  <option>Prancūzų k.</option>
+                  <option>Vokiečių k.</option>
+                  <option>Fizika</option>
+                  <option>Matematika</option>
+                  <option>Chemija</option>
+                </datalist>
+              </label>
+            </p>
+          </div>
+          <div class="form__btndiv">
+            <button class="form__btn">Registruotis</button>
+          </div>
+        </form>
+      </div>
+
+      <section class="video">
+        <div class="video__h1">
+          Spausk ant video, kad išgirstum pasiūlymą tik Tau !
+        </div>
+        <div class="video__img">
+          <img src="img/Group 777.png" alt="Video_img" class="video__logo" />
+        </div>
+        <iframe
+          class="video__frame"
+          src="https://player.vimeo.com/video/76979871"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </div>
+
+    <nav class="navbar">
+      <span class="navbar__span-1">
+        <img src="img/Group 647.png" class="navbar__logo" alt="" />
+      </span>
+      <span class="navbar__span-2">
+        <img src="img/Group 150.png" class="navbar__logo" alt="" />
+      </span>
+      <div class="navbar__items">
+        <a class="navbar__item nav_bar-item1 active pamoku__laikas-click">
+          <img src="img/iconos/book(1).png" alt="" class="navbar__icon" />
+          <h3 class="navbar__h3  active__textColor nav_bar-h1">
+            Pamokų laikas
+          </h3>
+        </a>
+        <a class="navbar__item nav_bar-item2 kainininkas-click">
+          <img src="img/iconos/price-tag.png" alt="" class="navbar__icon" />
+          <h3 class="navbar__h3 nav_bar-h2">Kainininkas</h3>
+        </a>
+        <a class="navbar__item nav_bar-item4 metodika-click">
+          <img src="img/iconos/article.png" alt="" class="navbar__icon" />
+          <h3 class="navbar__h3 nav_bar-h4">Metodika</h3>
+        </a>
+        <a class="navbar__item nav_bar-item3 statistika-click">
+          <img src="img/iconos/analytics.png" alt="" class="navbar__icon" />
+          <h3 class="navbar__h3 nav_bar-h3">Statistika</h3>
+        </a>
+      </div>
+    </nav>
+
+    <div class="pamoku__laikas">
+      <section class="mokymai">
+        <div class="mokymai__header">
+          <h2 class="mokymai__h2">Mokymų grupės paieška</h2>
+          <p class="mokymai__p">Pasirink ir sužinok daugiau informacijos</p>
+        </div>
+        <div class="mokymai__container animation-bottom">
+          <div class="mokymai__klases">
+            <h3 class="mokymai__klases-h3">Klasės</h3>
+            <div class="mokymai__klases-nr border"><span>1</span></div>
+            <div class="mokymai__klases-nr"><span>2</span></div>
+            <div class="mokymai__klases-nr"><span>3</span></div>
+            <div class="mokymai__klases-nr"><span>4</span></div>
+            <div class="mokymai__klases-nr"><span>5</span></div>
+            <div class="mokymai__klases-nr"><span>6</span></div>
+            <div class="mokymai__klases-nr"><span>7</span></div>
+            <div class="mokymai__klases-nr"><span>8</span></div>
+            <div class="mokymai__klases-nr"><span>9</span></div>
+            <div class="mokymai__klases-nr"><span>10</span></div>
+            <div class="mokymai__klases-nr"><span>11</span></div>
+            <div class="mokymai__klases-nr"><span>12</span></div>
+          </div>
+          <div class="mokymai__dalykas">
+            <h3 class="mokymai__klases-h3">Dalykas</h3>
+            <div class="mokymai__klases-nr border"><span>Lietuvių k.</span></div>
+            <div class="mokymai__klases-nr"><span>Anglų k.</span></div>
+            <div class="mokymai__klases-nr"><span>Matematika</span></div>
+            <div class="mokymai__klases-nr active_orange">
+              <span>Filtruoti</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tvarkarastis animation-bottom">
+        <div class="tvarkarastis__div">
+          <table class="tvarkarastis__table" id="pirmadienis">
+            <tr>
+              <th class="active_orange font-size">Pirmadienis</th>
+              <th class="active_grey font-size">Laikas</th>
+              <th class="active_grey font-size">Adresas</th>
+              <th class="active_grey font-size">Miestas</th>
+              <th></th>
+            </tr>
+          </table>
+          <table class="tvarkarastis__table" id="antradienis">
+            <tr>
+              <th class="active_orange font-size">Antradienis</th>
+              <th class="active_grey font-size">Laikas</th>
+              <th class="active_grey font-size">Adresas</th>
+              <th class="active_grey font-size">Miestas</th>
+              <th></th>
+            </tr>
+          </table>
+
+          <table class="tvarkarastis__table" id="treciadienis">
+            <tr>
+              <th class="active_orange font-size">Trečiadienis</th>
+              <th class="active_grey font-size">Laikas</th>
+              <th class="active_grey font-size">Adresas</th>
+              <th class="active_grey font-size">Miestas</th>
+              <th></th>
+            </tr>
+          </table>
+
+          <table class="tvarkarastis__table" id="ketvirtadienis">
+            <tr>
+              <th class="active_orange font-size">Ketvirtadienis</th>
+              <th class="active_grey font-size">Laikas</th>
+              <th class="active_grey font-size">Adresas</th>
+              <th class="active_grey font-size">Miestas</th>
+              <th></th>
+            </tr>
+          </table>
+
+          <table class="tvarkarastis__table" id="penktadienis">
+            <tr>
+              <th class="active_orange font-size">Penktadienis</th>
+              <th class="active_grey font-size">Laikas</th>
+              <th class="active_grey font-size">Adresas</th>
+              <th class="active_grey font-size">Miestas</th>
+              <th></th>
+            </tr>
+          </table>
+
+          <table class="tvarkarastis__table" id="sestadienis">
+            <tr>
+              <th class="active_orange font-size">Šeštadienis</th>
+              <th class="active_grey font-size">Laikas</th>
+              <th class="active_grey font-size">Adresas</th>
+              <th class="active_grey font-size">Miestas</th>
+              <th></th>
+            </tr>
+          </table>
+
+          <table class="tvarkarastis__table" id="sekmadienis">
+            <tr>
+              <th class="active_orange font-size">Sekmadienis</th>
+              <th class="active_grey font-size">Laikas</th>
+              <th class="active_grey font-size">Adresas</th>
+              <th class="active_grey font-size">Miestas</th>
+              <th></th>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="kainininkas display-none">
+      <section class="pricing">
+        <div class="pricing__heading">
+          <h2 class="h2-styling">Kainininkas</h2>
+          <p class="pricing__heading-p">Sužinok žinių kainą</p>
+        </div>
+        <div class="pricing__nav animation-bottom">
+          <button class="pricing__nav-btn instant">Mokėk iškarto - PIGIAU!</button>
+          <button class="pricing__nav-btn advance">Mokėk išsimokėtinai</button>
+          <button class="pricing__nav-btn one-time">Vienkartinis apsilankymas</button>
+        </div>
+        <div class="pricing__personal animation-bottom">
+          <h3 class="pricing__personal-h3">Individualių pamokų abonementas</h3>
+
+          <div class="pricing__personal-btn">
+            <button class="pricing__personal-btn-1">Papildomos dovanos</button>
+            <button class="pricing__personal-btn-2">Papildomos dovanos</button>
+          </div>
+
+          <table class="pricing__personal-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="text-color">3 mėn.</th>
+                <th class="text-color">6 mėn.</th>
+                <th class="text-color">9 mėn.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="active_grey font-size">Individualios pamokos</td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+              </tr>
+              <tr>
+                <td class="font-size">Porinės pamokos</td>
+                <td class="font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+              </tr>
+              <tr>
+                <td class="active_grey font-size">Grupinės pamokos</td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="red-line text-color-extraSmall"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pricing__advance display-none animation-bottom">
+          <h3 class="pricing__advance-h3">Mokėk išsimokėtinai</h3>
+          <div class="pricing__advance-btn">
+            <button class="pricing__advance-btn-1">Papildomos dovanos</button>
+            <button class="pricing__advance-btn-2">Papildomos dovanos</button>
+          </div>
+          <table class="pricing__advance-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="text-color">1 mėn.</th>
+                <th class="text-color">3 mėn.</th>
+                <th class="text-color">6 mėn.</th>
+                <th class="text-color">9 mėn.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="active_grey font-size">Individualios pamokos</td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+              </tr>
+              <tr>
+                <td class="font-size">Porinės pamokos</td>
+                <td class="font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+              </tr>
+              <tr>
+                <td class="active_grey font-size">Grupinės pamokos</td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+                <td class="active_grey font-size">
+                  24 Ak. Val.<br /><span class="text-color-2"
+                    >420 €<img class="pricing__icon" src="img/iconos/Path 139.png" alt=""/></span
+                  ><strong>379 €</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pricing__onetime animation-bottom display-none">
+          <h3 class="pricing__onetime-h3">Vienkartinis apmokėjimas</h3>
+          <div class="pricing__onetime-divs">
+            <div class="pricing__onetime-1">
+              <div class="pricing__onetime-header">
+                <h5 class="h2-styling">Moksleiviams</h5>
+                <span class="p-styling">1 - 4 klasė / 5 - 8 klasė / 9 - 12 klasė</span>
+              </div>
+              <div class="pricing__onetime-link">
+                <a class="pricing__onetime-a" href="">1 Ak. Val.</a>
+              </div>
+              <ul class="pricing__onetime-ul">
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Mokymosi metodika parinkta šskirtinai
+                  Jums
+                </li>
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Individualus mokytojų dėmėsys ir įgūdžių
+                  vertinimas
+                </li>
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Pamoka Jums patogiu laiku
+                </li>
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Draugiška, jauki ir, svarbiausia, saugi
+                  atmosfera
+                </li>
+              </ul>
+              <div class="pricing__onetime-info">
+                <h4 class="text-h4"><span class="red-star">*</span>Pirma pamoka - Nemokamai</h4>
+                <strong class="prima-text">5-9€</strong>
+              </div>
+              <div class="pricing__onetime-footer">
+                <button class="pricing__onetime-btn">Užsiregistruok</button>
+              </div>
+            </div>
+
+            <div class="pricing__onetime-2">
+              <div class="pricing__onetime-header">
+                <h5 class="h2-styling">Studentams</h5>
+                <span class="p-styling">1 - 4 klasė / 5 - 8 klasė / 9 - 12 klasė</span>
+              </div>
+              <div class="pricing__onetime-link">
+                <a class="pricing__onetime-a" href="">1 Ak. Val.</a>
+              </div>
+              <ul class="pricing__onetime-ul">
+                <li>
+                  <span><i class=" pricing__onetime-li fas fa-check"></i></span>Mokymosi metodika parinkta šskirtinai
+                  Jums
+                </li>
+                <li>
+                  <span><i class=" pricing__onetime-li fas fa-check"></i></span>Individualus mokytojų dėmėsys ir įgūdžių
+                  vertinimas
+                </li>
+                <li>
+                  <span><i class=" pricing__onetime-li fas fa-check"></i></span>Pamoka Jums patogiu laiku
+                </li>
+                <li>
+                  <span><i class=" pricing__onetime-li fas fa-check"></i></span>Draugiška, jauki ir, svarbiausia, saugi
+                  atmosfera
+                </li>
+              </ul>
+              <div class="pricing__onetime-info">
+                <h4 class="text-h4"><span class="red-star">*</span>Pirma pamoka - Nemokamai</h4>
+                <strong class="prima-text">5-9€</strong>
+              </div>
+              <div class="pricing__onetime-footer">
+                <button class="pricing__onetime-btn">Užsiregistruok</button>
+              </div>
+            </div>
+
+            <div class="pricing__onetime-3">
+              <div class="pricing__onetime-header">
+                <h5 class="h2-styling">Suaaugusiems</h5>
+                <span class="p-styling">1 - 4 klasė / 5 - 8 klasė / 9 - 12 klasė</span>
+              </div>
+              <div class="pricing__onetime-link">
+                <a class="pricing__onetime-a" href="">1 Ak. Val.</a>
+              </div>
+              <ul class="pricing__onetime-ul">
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Mokymosi metodika parinkta šskirtinai
+                  Jums
+                </li>
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Individualus mokytojų dėmėsys ir įgūdžių
+                  vertinimas
+                </li>
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Pamoka Jums patogiu laiku
+                </li>
+                <li>
+                  <span><i class="pricing__onetime-li fas fa-check"></i></span>Draugiška, jauki ir, svarbiausia, saugi
+                  atmosfera
+                </li>
+              </ul>
+              <div class="pricing__onetime-info">
+                <h4 class="text-h4"><span class="red-star">*</span>Pirma pamoka - Nemokamai</h4>
+                <strong class="prima-text">5-9€</strong>
+              </div>
+              <div class="pricing__onetime-footer">
+                <button class="pricing__onetime-btn">Užsiregistruok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lessons">
+        <div class="lessons__container">
+          <h4 class="lessons__header">Individualios Pamokos</h4>
+          <p class="lessons__paragraph">
+            Nulla nec lorem a nulla bibendum ultricies. Proin eget tristique mauris, non tincidunt sem. Phasellus et
+            odio sed odio malesuada elementum nec sit amet lacus. Nullam a mi sit amet dolor eleifend accumsan in vitae
+            tortor. Ut gravida metus eget faucibus varius. Pellentesque felis urna, dictum nec metus at, pharetra
+            suscipit ipsum. Pellentesque lacinia ante sed sem bibendum, ac sodales sem porttitor. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc
+            lobortis diam augue, et finibus erat suscipit et. Vivamus non ultrices sem. Curabitur vel ligula et purus
+            tempus posuere sed nec elit. Morbi vitae blandit tellus, a pulvinar ipsum. Quisque in sapien non sapien
+            elementum pulvinar eget et augue. Etiam convallis vitae lacus in euismod.
+          </p>
+        </div>
+        <div class="lessons__container">
+          <h4 class="lessons__header">Porinės Pamokos</h4>
+          <p class="lessons__paragraph">
+            Nulla nec lorem a nulla bibendum ultricies. Proin eget tristique mauris, non tincidunt sem. Phasellus et
+            odio sed odio malesuada elementum nec sit amet lacus. Nullam a mi sit amet dolor eleifend accumsan in vitae
+            tortor. Ut gravida metus eget faucibus varius. Pellentesque felis urna, dictum nec metus at, pharetra
+            suscipit ipsum. Pellentesque lacinia ante sed sem bibendum, ac sodales sem porttitor. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc
+            lobortis diam augue, et finibus erat suscipit et. Vivamus non ultrices sem. Curabitur vel ligula et purus
+            tempus posuere sed nec elit. Morbi vitae blandit tellus, a pulvinar ipsum. Quisque in sapien non sapien
+            elementum pulvinar eget et augue. Etiam convallis vitae lacus in euismod.
+          </p>
+        </div>
+        <div class="lessons__container">
+          <h4 class="lessons__header">Grupinės pamokos</h4>
+          <p class="lessons__paragraph">
+            Nulla nec lorem a nulla bibendum ultricies. Proin eget tristique mauris, non tincidunt sem. Phasellus et
+            odio sed odio malesuada elementum nec sit amet lacus. Nullam a mi sit amet dolor eleifend accumsan in vitae
+            tortor. Ut gravida metus eget faucibus varius. Pellentesque felis urna, dictum nec metus at, pharetra
+            suscipit ipsum. Pellentesque lacinia ante sed sem bibendum, ac sodales sem porttitor. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Nunc
+            lobortis diam augue, et finibus erat suscipit et. Vivamus non ultrices sem. Curabitur vel ligula et purus
+            tempus posuere sed nec elit. Morbi vitae blandit tellus, a pulvinar ipsum. Quisque in sapien non sapien
+            elementum pulvinar eget et augue. Etiam convallis vitae lacus in euismod.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="statistic statistikaClick display-none">
+      <div class="statistic__header">
+        <h2 class="statistic__header-h2">Statistika</h2>
+        <p class="statistic__header-p">Mūsų rezultatai</p>
+      </div>
+      <div class="statistic__facts animation-bottom">
+        <img src="img/iconos/female-graduate-student.svg" alt="Female Icon" class="statistic__facts-icon" />
+        <div class="statistic_facts-div">
+          <h3 class="statistic__facts-h3">Šiuo metu mokosi</h3>
+          <p class="statistic__facts-p">147</p>
+        </div>
+      </div>
+      <div class="statistic__facts animation-bottom">
+        <img src="img/iconos/classroom.svg" alt="Female Icon" class="statistic__facts-icon" />
+        <div class="statistic_facts-div">
+          <h3 class="statistic__facts-h3">Šiuo metu mokosi</h3>
+          <p class="statistic__facts-p">147</p>
+        </div>
+      </div>
+      <div class="statistic__facts animation-bottom">
+        <img src="img/iconos/education(1).svg" alt="Female Icon" class="statistic__facts-icon" />
+        <div class="statistic_facts-div">
+          <h3 class="statistic__facts-h3">Šiuo metu mokosi</h3>
+          <p class="statistic__facts-p">147</p>
+        </div>
+      </div>
+      <div class="statistic__reviews animation-bottom">
+        <h2 class="statistic__reviews-h2">Elon Musk</h2>
+        <p class="statistic__reviews-p">
+          Labai patiko mokymo metodika, esu patenkintas, kad mano sunūs topo kiek nors protingesni
+        </p>
+      </div>
+      <div class="statistic__reviews animation-bottom">
+        <h2 class="statistic__reviews-h2">Elon Musk</h2>
+        <p class="statistic__reviews-p">
+          Labai patiko mokymo metodika, esu patenkintas, kad mano sunūs topo kiek nors protingesni
+        </p>
+      </div>
+      <div class="statistic__reviews animation-bottom">
+        <h2 class="statistic__reviews-h2">Elon Musk</h2>
+        <p class="statistic__reviews-p">
+          Labai patiko mokymo metodika, esu patenkintas, kad mano sunūs topo kiek nors protingesni
+        </p>
+      </div>
+      <div class="statistic__reviews animation-bottom">
+        <h2 class="statistic__reviews-h2">Elon Musk</h2>
+        <p class="statistic__reviews-p">
+          Labai patiko mokymo metodika, esu patenkintas, kad mano sunūs topo kiek nors protingesni
+        </p>
+      </div>
+      <div class="reviews__number animation-bottom">
+        <span class="reviews__number-span" onclick="increment()">
+          <img src="img/iconos/Path 190.svg" alt="" class="reviews__number-icon" />
+        </span>
+        <div class="reviews__number-text">
+          <h4 class="reviews__number-h4">Atsiliepimų</h4>
+          <p class="reviews__number-p">100 +</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="methods metodikaClick display-none">
+      <div class="methods__header">
+        <h5 class="methods__header-h2">Mūsų metodika</h5>
+        <p class="methods__header-p">Kaip mes mokom?</p>
+      </div>
+      <div class="methods__container animation-bottom">
+        <div class="methods__container-div-left">
+          <img src="img/isometric/Group 341.svg" alt="" class="methods__container-img-left" />
+          <div class="methods__container-info-left">
+            <h5 class="methods__container-h text-color">Mūsų istorija</h5>
+            <p class="methods__container-p">
+              2016m. Kaune įkurtas Busiver Verslo Institutas suteikiantis galimybę įgyti Jungtinės Karalystės bakalauro
+              kvalifikacinį laipsnį vos per dvejus metus. Netrukus supratome, kad ties aukštuoju mokslu neketiname
+              sustoti, o ir be to įžvelgėme spragų dabartinėje švietimo sistemoje. Komandai išsikėlus tikslą kurti
+              efektyvią aplinką 1-12klasių moksleivių švietimui, pradėjome nuo pagrindų kurti Išmoko.lt. Šiuo metu esame
+              akredituota ir sertifikuota korepetitorių mokykla. Mūsų tikslas – teikti aukščiausios kokybės mokymą
+              koncentruotą pagal efektyviausius XXI amžiaus švietimo standartus. Tai darome taikydami individualizuotas
+              mokymo programas, orientuotas į asmeninį moksleivių tobulėjimą. Negana to, savo dėmesį skiriame kuriant
+              vaikams jaukią ir malonią aplinką. Mūsų dėstytojai yra draugiški, kompetentingi bei jaunatviški
+              profesionalai.
+            </p>
+          </div>
+        </div>
+        <div class="methods__container-div-right">
+          <img src="img/isometric/Group 578.svg" alt="" class="methods__container-img-right" />
+          <div class="methods__container-info-right">
+            <h5 class="methods__container-h text-color">Mūsų metodika</h5>
+            <p class="methods__container-p">
+              2016m. Kaune įkurtas Busiver Verslo Institutas suteikiantis galimybę įgyti Jungtinės Karalystės bakalauro
+              kvalifikacinį laipsnį vos per dvejus metus. Netrukus supratome, kad ties aukštuoju mokslu neketiname
+              sustoti, o ir be to įžvelgėme spragų dabartinėje švietimo sistemoje. Komandai išsikėlus tikslą kurti
+              efektyvią aplinką 1-12klasių moksleivių švietimui, pradėjome nuo pagrindų kurti Išmoko.lt. Šiuo metu esame
+              akredituota ir sertifikuota korepetitorių mokykla. Mūsų tikslas – teikti aukščiausios kokybės mokymą
+              koncentruotą pagal efektyviausius XXI amžiaus švietimo standartus. Tai darome taikydami individualizuotas
+              mokymo programas, orientuotas į asmeninį moksleivių tobulėjimą. Negana to, savo dėmesį skiriame kuriant
+              vaikams jaukią ir malonią aplinką. Mūsų dėstytojai yra draugiški, kompetentingi bei jaunatviški
+              profesionalai.
+            </p>
+          </div>
+        </div>
+        <div class="methods__container-div-left">
+          <img src="img/isometric/Group 624.svg" alt="" class="methods__container-img-left" />
+          <div class="methods__container-info-left">
+            <h5 class="methods__container-h text-color">Sūkuriama atmosfera</h5>
+            <p class="methods__container-p">
+              2016m. Kaune įkurtas Busiver Verslo Institutas suteikiantis galimybę įgyti Jungtinės Karalystės bakalauro
+              kvalifikacinį laipsnį vos per dvejus metus. Netrukus supratome, kad ties aukštuoju mokslu neketiname
+              sustoti, o ir be to įžvelgėme spragų dabartinėje švietimo sistemoje. Komandai išsikėlus tikslą kurti
+              efektyvią aplinką 1-12klasių moksleivių švietimui, pradėjome nuo pagrindų kurti Išmoko.lt. Šiuo metu esame
+              akredituota ir sertifikuota korepetitorių mokykla. Mūsų tikslas – teikti aukščiausios kokybės mokymą
+              koncentruotą pagal efektyviausius XXI amžiaus švietimo standartus. Tai darome taikydami individualizuotas
+              mokymo programas, orientuotas į asmeninį moksleivių tobulėjimą. Negana to, savo dėmesį skiriame kuriant
+              vaikams jaukią ir malonią aplinką. Mūsų dėstytojai yra draugiški, kompetentingi bei jaunatviški
+              profesionalai.
+            </p>
+          </div>
+        </div>
+        <div class="methods__container-div-right">
+          <img src="img/isometric/Group 646.svg" alt="" class="methods__container-img-right" />
+          <div class="methods__container-info-right">
+            <h5 class="methods__container-h text-color">Kokybė</h5>
+            <p class="methods__container-p">
+              2016m. Kaune įkurtas Busiver Verslo Institutas suteikiantis galimybę įgyti Jungtinės Karalystės bakalauro
+              kvalifikacinį laipsnį vos per dvejus metus. Netrukus supratome, kad ties aukštuoju mokslu neketiname
+              sustoti, o ir be to įžvelgėme spragų dabartinėje švietimo sistemoje. Komandai išsikėlus tikslą kurti
+              efektyvią aplinką 1-12klasių moksleivių švietimui, pradėjome nuo pagrindų kurti Išmoko.lt. Šiuo metu esame
+              akredituota ir sertifikuota korepetitorių mokykla. Mūsų tikslas – teikti aukščiausios kokybės mokymą
+              koncentruotą pagal efektyviausius XXI amžiaus švietimo standartus. Tai darome taikydami individualizuotas
+              mokymo programas, orientuotas į asmeninį moksleivių tobulėjimą. Negana to, savo dėmesį skiriame kuriant
+              vaikams jaukią ir malonią aplinką. Mūsų dėstytojai yra draugiški, kompetentingi bei jaunatviški
+              profesionalai.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kontaktai">
+      <div class="kontaktai__header">
+        <img class="kontaktai__header-logo" src="img/Group 647.png" alt="Header Logo" />
+        <div class="kontaktai__header-1">
+          <h4 class="kontaktai__header-info1">Kontaktai</h4>
+          <h4 class="kontaktai__header-miestas">Vilnius</h4>
+          <h4 class="kontaktai__header-rekvizitai">
+            Smolensko g. 10C, LT-03210
+          </h4>
+          <h4 class="kontaktai__header-rekvizitai">Mob. nr. +370 624 32518</h4>
+          <img src="img/300.jpg" alt="" class="kontaktai__header-image" />
+        </div>
+        <div class="kontaktai__header-2">
+          <h4 class="kontaktai__header-info"></h4>
+          <h4 class="kontaktai__header-miestas">Vilnius</h4>
+          <h4 class="kontaktai__header-rekvizitai">Buivydiškių g. 26</h4>
+          <h4 class="kontaktai__header-rekvizitai">Mob. nr. +370 6126 6668</h4>
+          <img src="img/300.jpg" alt="" class="kontaktai__header-image" />
+        </div>
+      </div>
+      <div class="kontaktai__paragraph">
+        <h2 class="kontaktai__paragraph-h2">Lorem Ipsumus</h2>
+        <p class="kontaktai__paragraph-p">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quibusdam numquam libero eveniet
+          asperiores maxime id non repudiandae. Illo amet, consectetur quos quaerat pariatur tempora mollitia molestias
+          consequuntur laudantium? Laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+          distinctio dolor suscipit esse, odio impedit dicta ex nulla laboriosam magni, deleniti doloribus quae error.
+          Voluptatum aliquam doloribus fuga laborum veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Odit quidem quam aperiam placeat. Aspernatur ab esse accusamus recusandae eligendi a, consequatur at sint
+          ullam quaerat quibusdam libero cum dignissimos mollitia.
+        </p>
+        <p class="kontaktai__paragraph-p">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quibusdam numquam libero eveniet
+          asperiores maxime id non repudiandae. Illo amet, consectetur quos quaerat pariatur tempora mollitia molestias
+          consequuntur laudantium? Laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <p class="kontaktai__paragraph-p">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quibusdam numquam libero eveniet
+          asperiores maxime id non repudiandae.
+        </p>
+      </div>
+    </section>
+
+    <section class="faktai">
+      <div class="faktai__div">
+        <span class="faktai__div-span">
+          <img src="img/iconos/Path 1140.svg" alt="" class="faktai__div-img" />
+        </span>
+        <p class="faktai__div-p">
+          Vienintelė sertifikuota Busiver Verslo instituto mokykla Lietuvoje, ruošianti savarankiškus bei sumanius
+          mokinius, galinčius įveikti visus kilusius iššūkius!
+        </p>
+      </div>
+      <div class="faktai__div">
+        <span class="faktai__div-span">
+          <img src="img/iconos/multiple-users-silhouette(1).svg" alt="" class="faktai__div-img" />
+        </span>
+        <p class="faktai__div-p">
+          Kiekvienas mokinys mokomas pagal individualias ugdymo metodikas, paliekant galimybę lavinti grupinio darbo
+          įgūdžius.
+        </p>
+      </div>
+      <div class="faktai__div">
+        <span class="faktai__div-span">
+          <img src="img/iconos/diploma_icon-icons.com_64575.svg" alt="" class="faktai__div-img" />
+        </span>
+        <p class="faktai__div-p">
+          Unikali, šiuolaikiška metodika garantuoja pažymio kilimą bent per du balus.
+        </p>
+      </div>
+      <div class="faktai__div">
+        <span class="faktai__div-span">
+          <img src="img/iconos/Group 658.svg" alt="" class="faktai__div-img" />
+        </span>
+        <p class="faktai__div-p">
+          Dėstantys mokytojai - jauni, savo srities specialistai, metodikas ruošiantys pagal naujausias tendencijas!
+        </p>
+      </div>
+      <div class="faktai__btn">
+        <a href="#" class="faktai__btn-link1">Smolensko g.</a>
+        <a href="#" class="faktai__btn-link2">Buivydiškių g.</a>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="map__img">
+        <div id="mapContainer"></div>
+      </div>
+      <div class="map__info">
+        <h3 class="map__info-h3">Kaip mus pasiekti?</h3>
+        <h4 class="map__info-h4">Smolensko g. 10C, Vilnius</h4>
+        <div class="map__bus width65">
+          <img src="img/iconos/Path 1157.svg" alt="Bus Icon" class="map__bus-logo" />
+          <p class="map__bus-info">
+            Statybininkų st. - Autobusai: 7, 54, 55, 29, Troleibusai: 15, 16
+          </p>
+        </div>
+        <div class="map__bus">
+          <img src="img/iconos/Path 1157.svg" alt="Bus Icon" class="map__bus-logo" />
+          <p class="map__bus-info">Naugarduko St. - Autobusai: 73</p>
+        </div>
+        <div class="map__bus">
+          <img src="img/iconos/Path 1157.svg" alt="Bus Icon" class="map__bus-logo" />
+          <p class="map__bus-info">
+            Naujamiesčio st. - Greitieji autobusai: 2G, 4G
+          </p>
+        </div>
+        <h3 class="map__info-h3">Kur palikti automobilį?</h3>
+        <div class="map__bus">
+          <img src="img/iconos/Subtraction 1.svg" alt="Parking Icon" class="map__bus-logo" />
+          <p class="map__bus-info">
+            Prekybos centro Lidl stovėjimo aikštelė: Žemaitės g. 16 Prekybos centro Hyper Rimi stovėjimo aikštelė: Kėdrų
+            g. 4 Žalia stovėjimų zona aplink mokyklą
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="about">
+        <h2 class="about__h2">Apie Mus</h2>
+        <p class="about__p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores cum voluptatum voluptatibus nihil
+          veniam repellendus, earum suscipit voluptate facilis quae. Ut laboriosam tempora iure quisquam repudiandae aut
+          earum dolorem.
+        </p>
+        <p class="about__keywords">Korepetitorius</p>
+        <p class="about__keywords">Matematika</p>
+        <p class="about__keywords">Lietuvių kalba</p>
+        <p class="about__keywords">RandomKeyword</p>
+        <p class="about__keywords">RandowmKeyword</p>
+      </div>
+      <div class="rekvizitai">
+        <h2 class="about__h2">Rekvizitai</h2>
+        <p class="about__p">
+          UAB "Mylandijos verslo institutas" Įmonės kodas: 304072815 Darbo laikas I-VII 9:00-21:00
+        </p>
+        <h2 class="about__h2">Kontaktai</h2>
+        <p class="about__p">
+          info@ismoko.lt<br />
+          +370 624 32518<br />
+          Smolensko g. 10C, Vilnius
+        </p>
+      </div>
+      <div class="footer__img">
+        <img src="img/Group 777.png" alt="Footer Icon" class="footer__icon" />
+      </div>
+    </footer>
+    <div class="footer__copyrights">
+      <p class="footer__copyrights-p">
+        2019 &copy; Copyright by Laimonas Čiurlionis | ismoko.lt
+      </p>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+//SASS variables for media queries
+$bp-largest: 75em; //1200/16
+$bp-large: 68.75em; //1100/16
+$bp-medium: 56.25em; //900/16
+$bp-small: 37.5em; //600/16
+$bp-smallest: 31.25em; //500/16
+$bp-extraSmall: 25.25em;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  line-height: 1.7;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg {
+  background: url(../img/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}

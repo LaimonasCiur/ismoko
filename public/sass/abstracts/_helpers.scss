@@ -1,0 +1,215 @@
+.animation-right {
+  animation: moveInRight 1s ease-out;
+}
+
+.animation-left {
+  animation: moveInLeft 1s ease-out;
+}
+
+.animation-bottom {
+  animation: moveInBottom 1s ease-out;
+}
+
+.display-none {
+  display: none;
+}
+
+.active {
+  background-color: #57c7d2;
+
+  &__textColor {
+    color: #fff !important;
+  }
+}
+
+.red-star {
+  color: red;
+}
+
+.text-color {
+  color: #f8b027;
+  font-size: 1.6rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.2rem;
+  }
+}
+
+.text-color-2 {
+  color: #afbfc4;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: #ee1f25;
+    top: 66%;
+    left: 25%;
+    height: 2px;
+    width: 25px;
+    transform: rotate(45deg);
+
+    @media only screen and (max-width: $bp-largest) {
+      left: 25%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      left: 13%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 50%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      left: 8%;
+      top: 70%;
+    }
+
+    @media only screen and (max-width: $bp-extraSmall) {
+      top: 48%;
+      left: 12%;
+    }
+  }
+}
+
+.text-color-extraSmall {
+  color: #afbfc4;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: #ee1f25;
+    top: 66%;
+    left: 28%;
+    height: 2px;
+    width: 25px;
+    transform: rotate(45deg);
+
+    @media only screen and (max-width: $bp-medium) {
+      left: 25%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      left: 18%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      left: 10%;
+    }
+  }
+}
+
+.text-h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2b6877;
+}
+
+.prima-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #57c7d2;
+}
+
+.fas {
+  background: #e8f6f8;
+  color: #59c5d1;
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 800;
+  margin-right: 1rem;
+}
+.padding-right {
+  padding: -5rem;
+}
+
+.h2-styling {
+  color: #4b7680;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.p-styling {
+  color: #a0b0b7;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.border {
+  border: 2px solid #5cc7d2 !important;
+}
+
+.active_orange {
+  background-color: #f9b126 !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.active_grey {
+  background-color: #f5f5f5 !important;
+  position: relative;
+}
+
+.grey_text {
+  color: #a4b5b9 !important;
+  font-size: 1.25rem;
+
+  // @media only screen and (max-width: $bp-small) {
+  //   font-size: 0.5rem;
+  // }
+
+  // @media only screen and (max-width: $bp-smallest) {
+  //   font-size: 0.5rem;
+  // }
+}
+
+.registruotis {
+  border: 2px solid #47bdc9;
+  border-radius: 3rem;
+  background-color: #5cc7d2;
+  padding: 0.75rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0rem;
+    border: none;
+    font-size: 1rem !important;
+    border-radius: 0;
+    background-color: #fff;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0rem;
+    border: none;
+    font-size: 1rem !important;
+    border-radius: 0;
+    background-color: #fff;
+  }
+}
+
+.font-size {
+  font-size: 1.5rem;
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1rem;
+  }
+}
+
+.margin-top {
+  margin-top: 3.8rem !important;
+}
+
+.margin-left {
+  margin-left: 50rem;
+}
+
+.margin-right {
+  margin-right: 50rem;
+}

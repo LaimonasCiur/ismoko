@@ -1,0 +1,187 @@
+.statistic {
+  margin: 0 auto;
+  width: 70%;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    width: 85%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 90%;
+  }
+
+  &__header {
+    text-align: center;
+    margin: 2.5rem 0 2.5rem 0;
+
+    &-h2 {
+      color: #4b7680;
+      font-weight: 800;
+      font-size: 3rem;
+    }
+
+    &-p {
+      margin-top: -1rem;
+      color: #4b7680;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__facts {
+    width: 33%;
+    display: inline-flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 30%;
+    }
+
+    &-icon {
+      padding-right: 2rem;
+      width: 6rem;
+      height: 7.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        padding-right: 1rem;
+        width: 3rem;
+        height: 4rem;
+        width: 100%;
+      }
+    }
+
+    &-h3 {
+      font-size: 2rem;
+      color: #4b7680;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1rem;
+      }
+    }
+
+    &-p {
+      margin-top: -1rem;
+      color: #5cc7d2;
+      font-size: 2.5rem;
+      font-weight: 900;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 0;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  &__reviews {
+    box-shadow: 0px 17px 25px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 2rem 2rem auto;
+    padding: 3rem;
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 45%;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 45%;
+      margin: 1rem 1rem auto;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 45%;
+      margin: 1rem 1rem auto;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0;
+      width: 100%;
+    }
+
+    &-h2 {
+      color: #4b7680;
+      font-weight: 800;
+      font-size: 2.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-p {
+      color: #4b7680;
+    }
+  }
+}
+
+.reviews__number {
+  margin-left: 8rem;
+  margin-bottom: 15rem;
+  width: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-left: 6rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-left: 4rem;
+  }
+
+  &-span {
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    box-shadow: 0px 17px 25px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    border: 1px solid transparent;
+  }
+
+  &-icon {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &-h4 {
+    font-size: 2rem;
+    color: #4b7680;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-p {
+    margin-top: -1rem;
+    color: #5cc7d2;
+    font-size: 2.5rem;
+    font-weight: 900;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.5rem;
+    }
+  }
+}

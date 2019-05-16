@@ -1,0 +1,123 @@
+.mokymai {
+  margin-top: 4rem;
+  height: 25rem;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 17.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 25rem;
+  }
+
+  // @media only screen and (max-width: $bp-small) {
+  //     margin-bottom: 50rem;
+  // }
+
+  &__header {
+    color: #4b7680;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 12rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-bottom: 12rem;
+    }
+  }
+
+  &__h2 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  &__p {
+    margin-top: -1rem;
+    font-size: 1.5rem;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__klases {
+    height: 80%;
+    flex: 0 0 40%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 3px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 18rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-left: 10rem;
+      margin-bottom: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    }
+
+    &-nr {
+      font-weight: 900;
+      color: #4b7680;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 1rem;
+      border: 2px solid #eaedee;
+      border-radius: 1.5rem;
+    }
+
+    &-h3 {
+      color: #4b7680;
+      font-size: 3rem;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__dalykas {
+    margin-left: 5rem;
+    height: 80%;
+    flex: 0 0 25%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    justify-content: center;
+    align-content: center;
+    gap: 3px;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-left: 10rem;
+      margin-bottom: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 5.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-left: 3rem;
+    }
+  }
+}

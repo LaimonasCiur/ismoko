@@ -1,0 +1,45 @@
+.lessons {
+  width: 50%;
+  margin: 5rem auto;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin: 1rem auto;
+  }
+
+  &__container {
+    display: flex;
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__header {
+    flex: 0 0 25%;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f8b027;
+    line-height: 3rem;
+    padding: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex: 0 0 100%;
+    }
+
+    @include after;
+  }
+
+  &__paragraph {
+    @include paragraph;
+    margin-left: 1rem;
+  }
+}

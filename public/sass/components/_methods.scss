@@ -1,0 +1,91 @@
+.methods {
+  width: 60%;
+  margin: 5rem auto;
+
+  @media only screen and (max-width: $bp-largest) {
+    width: 90%;
+    margin-left: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 95%;
+    margin-left: 1rem;
+  }
+  &__header {
+    text-align: center;
+    &-h2 {
+      color: #4b7680;
+      font-weight: 800;
+      font-size: 3rem;
+    }
+
+    &-p {
+      color: #4b7680;
+      font-size: 1.5rem;
+      margin-top: -1rem;
+    }
+  }
+
+  &__container {
+    &-div-left {
+      @include grid;
+    }
+
+    &-info-left {
+      grid-row: 1 / 1;
+      grid-column: 2 / -1;
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-row: 1 / 1;
+        grid-column: 1 / -1;
+      }
+    }
+
+    &-img-left {
+      width: 20rem;
+      height: 20rem;
+      grid-column: 1 / span 1;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 10rem;
+        height: 10rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    &-div-right {
+      @include grid;
+    }
+
+    &-info-right {
+      grid-row: 1 / 1;
+      grid-column: 1 / span 7;
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-row: 1 / 1;
+        grid-column: 1 / -1;
+      }
+    }
+
+    &-img-right {
+      width: 22rem;
+      height: 22rem;
+      grid-column: 8 / span 2;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    &-h {
+      @include after;
+    }
+
+    &-p {
+      @include paragraph;
+    }
+  }
+}
