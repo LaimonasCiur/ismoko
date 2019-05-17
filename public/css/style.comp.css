@@ -1188,7 +1188,6 @@ body {
   grid-column: 1 / -1;
 }
 .mokymai__dalykas {
-  overflow: hidden;
   margin-left: 5rem;
   height: 80%;
   flex: 0 0 25%;
