@@ -2,4 +2,5 @@
 
 Full Stack Application build with:
 Node.js/Express.js
-SASS/ Vanila JS
+SASS and Vanilla JS (ES5+)
+
